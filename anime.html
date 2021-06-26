@@ -1,0 +1,15 @@
+{%  extends 'base.html' %}
+ {% block title %} Home page {%  endblock %}
+
+{% block content %}
+<br>
+<h3>ანიმეს დამატება</h3>
+    <form method="post" style="width:30%; margin-left: 50px">
+      <div class="form-group">
+        <input type="text" name="title" class="form-control" placeholder="Anime Title"><br>
+        <input type="text" name="genre" class="form-control" placeholder="Genre"><br>
+        <input type="text" name="score" class="form-control"  placeholder="Score"><br>
+      </div>
+    <button type="submit" class="btn btn-primary">Add Anime</button>
+    </form>
+{% endblock %}
